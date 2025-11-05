@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - SourcePoint</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: #f6f8fb;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        
+        header {
+            background: linear-gradient(135deg, #0F1419 0%, #1A1F2E 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #8B7DFF 0%, #a29bfe 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .nav {
+            margin-top: 20px;
+        }
+        
+        .nav a {
+            color: #8B7DFF;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 14px;
+        }
+        
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        
+        .content {
+            padding: 60px 40px;
+        }
+        
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #0F1419;
+        }
+        
+        h2 {
+            font-size: 24px;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            color: #1A1F2E;
+            border-bottom: 2px solid #8B7DFF;
+            padding-bottom: 10px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            color: #4a5568;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .contact-card {
+            background: linear-gradient(135deg, #f6f8fb 0%, #ffffff 100%);
+            padding: 30px;
+            border-radius: 15px;
+            border: 2px solid #e2e8f0;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(139, 125, 255, 0.2);
+            border-color: #8B7DFF;
+        }
+        
+        .contact-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+        
+        .contact-card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #1A1F2E;
+        }
+        
+        .contact-card a {
+            color: #8B7DFF;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .contact-card a:hover {
+            text-decoration: underline;
+        }
+        
+        .faq {
+            background: #f7fafc;
+            border-left: 4px solid #8B7DFF;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .faq h3 {
+            color: #1A1F2E;
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            background: #0F1419;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+        
+        footer a {
+            color: #8B7DFF;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                padding: 40px 20px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">SourcePoint</div>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="support.html">Support</a>
+            </nav>
+        </header>
+        
+        <div class="content">
+            <h1>Support & Help Center</h1>
+            <p>Need help? We're here for you! Choose the best way to reach us below.</p>
+            
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email Support</h3>
+                    <p>General inquiries and support</p>
+                    <a href="mailto:support@sourcepoint.app">support@sourcepoint.app</a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">🔒</div>
+                    <h3>Privacy Inquiries</h3>
+                    <p>Data and privacy questions</p>
+                    <a href="mailto:privacy@sourcepoint.app">privacy@sourcepoint.app</a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">🐛</div>
+                    <h3>Bug Reports</h3>
+                    <p>Report technical issues</p>
+                    <a href="mailto:bugs@sourcepoint.app">bugs@sourcepoint.app</a>
+                </div>
+            </div>
+            
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq">
+                <h3>How do I create an account?</h3>
+                <p>Download the SourcePoint app from the App Store, open it, and tap "Sign Up" on the login screen. Enter your email, create a username, and set a password. You'll be ready to start exploring!</p>
+            </div>
+            
+            <div class="faq">
+                <h3>How does the fact-checking feature work?</h3>
+                <p>Our AI-powered fact-checking uses Google Vertex AI to verify claims in real-time. Simply navigate to the Fact Check tab, enter a statement you want to verify, and our AI will analyze it against reliable sources and provide a credibility rating with citations.</p>
+            </div>
+            
+            <div class="faq">
+                <h3>What are Dossiers?</h3>
+                <p>Dossiers are personal research collections where you can save episodes, sources, and fact-checked information on topics that interest you. Create a dossier from the Dossiers tab, give it a name, and start adding content!</p>
+            </div>
+            
+            <div class="faq">
+                <h3>How do I delete my account?</h3>
+                <p>Go to Settings → Account → Delete Account. This will permanently remove all your data within 30 days. If you need help, contact us at privacy@sourcepoint.app.</p>
+            </div>
+            
+            <div class="faq">
+                <h3>Is SourcePoint free to use?</h3>
+                <p>Yes! SourcePoint is completely free to use. We may offer optional premium features in the future, but core functionality will always be free.</p>
+            </div>
+            
+            <div class="faq">
+                <h3>Which platforms do you support?</h3>
+                <p>SourcePoint currently supports iOS (iPhone and iPad). Android support is planned for the future. We also aggregate content from Rumble, YouTube, and other podcast platforms.</p>
+            </div>
+            
+            <div class="faq">
+                <h3>How do I report inappropriate content?</h3>
+                <p>If you see content that violates our terms of service, please email us at support@sourcepoint.app with details about the content and where you found it. We take all reports seriously.</p>
+            </div>
+            
+            <div class="faq">
+                <h3>Can I export my research?</h3>
+                <p>Yes! You can export your dossiers and saved content. This feature is accessible from your profile settings. You have full ownership of your data.</p>
+            </div>
+            
+            <h2>Response Times</h2>
+            <ul style="margin-left: 30px; color: #4a5568;">
+                <li><strong>General Support</strong>: Within 48 hours</li>
+                <li><strong>Privacy Inquiries</strong>: Within 48 hours</li>
+                <li><strong>Bug Reports</strong>: Acknowledged within 24 hours</li>
+                <li><strong>Critical Issues</strong>: Immediate priority</li>
+            </ul>
+            
+            <h2>Social Media</h2>
+            <p>Follow us for updates, tips, and news:</p>
+            <ul style="margin-left: 30px; color: #4a5568;">
+                <li><strong>Twitter/X</strong>: Coming Soon</li>
+                <li><strong>Discord</strong>: Coming Soon</li>
+                <li><strong>GitHub</strong>: <a href="https://github.com/NightLock305/sourcepointproject" target="_blank">github.com/NightLock305/sourcepointproject</a></li>
+            </ul>
+            
+            <h2>Still Need Help?</h2>
+            <p>If you can't find what you're looking for, please don't hesitate to reach out:</p>
+            <p style="text-align: center; margin: 30px 0;">
+                <a href="mailto:support@sourcepoint.app" style="display: inline-block; padding: 15px 40px; background: linear-gradient(135deg, #8B7DFF 0%, #a29bfe 100%); color: white; text-decoration: none; border-radius: 25px; font-weight: bold;">Contact Support</a>
+            </p>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 SourcePoint. All rights reserved.</p>
+            <p style="margin-top: 10px;">
+                <a href="index.html">Home</a> | 
+                <a href="privacy.html">Privacy Policy</a> | 
+                <a href="support.html">Support</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
+

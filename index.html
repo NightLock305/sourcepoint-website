@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SourcePoint - Political Podcast Aggregator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #0F1419 0%, #1A1F2E 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #8B7DFF 0%, #a29bfe 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .tagline {
+            font-size: 20px;
+            color: #8B92A8;
+            margin-bottom: 30px;
+        }
+        
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 30px;
+            background: rgba(139, 125, 255, 0.2);
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(139, 125, 255, 0.3);
+        }
+        
+        .nav a:hover {
+            background: rgba(139, 125, 255, 0.4);
+            border-color: #8B7DFF;
+            transform: translateY(-2px);
+        }
+        
+        .content {
+            padding: 60px 40px;
+        }
+        
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #0F1419;
+        }
+        
+        h2 {
+            font-size: 28px;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            color: #1A1F2E;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            color: #4a5568;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .feature {
+            padding: 30px;
+            background: linear-gradient(135deg, #f6f8fb 0%, #ffffff 100%);
+            border-radius: 15px;
+            border: 2px solid #e2e8f0;
+            transition: all 0.3s ease;
+        }
+        
+        .feature:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(139, 125, 255, 0.2);
+            border-color: #8B7DFF;
+        }
+        
+        .feature-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+        
+        .feature h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #1A1F2E;
+        }
+        
+        .cta {
+            text-align: center;
+            margin: 60px 0;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 18px 50px;
+            background: linear-gradient(135deg, #8B7DFF 0%, #a29bfe 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(139, 125, 255, 0.3);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(139, 125, 255, 0.4);
+        }
+        
+        footer {
+            background: #0F1419;
+            color: white;
+            text-align: center;
+            padding: 40px;
+        }
+        
+        footer a {
+            color: #8B7DFF;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            header {
+                padding: 40px 20px;
+            }
+            
+            .logo {
+                font-size: 36px;
+            }
+            
+            .content {
+                padding: 40px 20px;
+            }
+            
+            h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">SourcePoint</div>
+            <div class="tagline">The Source of Truth in Political Media</div>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="support.html">Support</a>
+            </nav>
+        </header>
+        
+        <div class="content">
+            <h1>Stay Informed. Verify Everything.</h1>
+            <p>SourcePoint is the ultimate political podcast aggregation platform with AI-powered fact-checking and comprehensive source verification. In an era of misinformation, we empower you to consume political content critically.</p>
+            
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">📻</div>
+                    <h3>Podcast Aggregation</h3>
+                    <p>Access episodes from leading political podcasts and shows, all in one place.</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">🔍</div>
+                    <h3>AI Fact-Checking</h3>
+                    <p>Real-time fact verification powered by Google Vertex AI with source citations.</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">📚</div>
+                    <h3>Personal Dossiers</h3>
+                    <p>Create custom research collections on any topic. Organize your political research.</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">🌐</div>
+                    <h3>Source Verification</h3>
+                    <p>Comprehensive source tracking with credibility ratings and original links.</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">👥</div>
+                    <h3>Social Features</h3>
+                    <p>Follow other users, share research, and build your reputation in the community.</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Smart Discovery</h3>
+                    <p>Browse by topics, hosts, or get personalized recommendations based on your interests.</p>
+                </div>
+            </div>
+            
+            <div class="cta">
+                <a href="https://apps.apple.com/app/sourcepoint" class="cta-button">Download on the App Store</a>
+                <p style="margin-top: 20px; color: #8B92A8;">Coming Soon to iOS</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 SourcePoint. All rights reserved.</p>
+            <p style="margin-top: 10px;">
+                <a href="privacy.html">Privacy Policy</a> | 
+                <a href="support.html">Support</a> | 
+                <a href="mailto:support@sourcepoint.app">Contact</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
+
